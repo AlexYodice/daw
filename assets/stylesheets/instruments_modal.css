@@ -1,0 +1,106 @@
+.instruments-modal-hidden {
+    display: none;
+}
+
+#instruments-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #333;
+    width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.track-types-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.track-type {
+    background: #444;
+    border-radius: 6px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.track-type.software { border-top: 3px solid #2dba4e; }
+.track-type.audio { border-top: 3px solid #2c75c9; }
+.track-type.drummer { border-top: 3px solid #e6b93c; }
+
+.track-type-content {
+    text-align: center;
+}
+
+.track-type-icon {
+    margin: 20px 0;
+}
+
+.track-type p {
+    color: #999;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+}
+
+.details-section {
+    color: #999;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.help-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.cancel-btn, .create-btn {
+    padding: 6px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #555;
+    color: white;
+}
+
+.create-btn {
+    background: #0088cc;
+    color: white;
+}

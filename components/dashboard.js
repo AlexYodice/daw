@@ -4,12 +4,13 @@ import InstrumentsModal from './instruments_modal';
 import Ticker from './ticker';
 import RecordingSuite from './recording_suite';
 
-
 class Dashboard {
   constructor(keyboard) {
+    console.log('Dashboard initializing...');
     this.timer = new Timer(this);
     this.instruments = [];
     this.modal = new InstrumentsModal();
+    console.log('Modal created:', this.modal);
     this.modal.populateModal(this.addInstrument.bind(this));
     this.keyboard = keyboard;
     this.selectedInstrument = null;

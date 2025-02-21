@@ -1,0 +1,116 @@
+.track-type-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;  /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #333;
+    width: 900px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.track-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.track-type-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.track-type-button.software { background: #2dba4e; }
+.track-type-button.audio { background: #2c75c9; }
+.track-type-button.drummer { background: #e6b93c; }
+
+.track-type-card {
+    background: #444;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.track-type-icon {
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.track-type-card p {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.details-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.cancel-btn, .create-btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #555;
+    color: white;
+}
+
+.create-btn {
+    background: #0088cc;
+    color: white;
+}
+
+.create-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+} 

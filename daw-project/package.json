@@ -1,0 +1,18 @@
+{
+  "name": "daw-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/jquery": "^3.5.32",
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "jquery": "^3.7.1"
+  }
+}
